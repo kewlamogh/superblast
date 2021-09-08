@@ -1,0 +1,17 @@
+<script src="/socket.io/socket.io.js"></script>
+<canvas id = "canv"></canvas>
+<script>
+  let socket = io();
+  let c = document.getElementById("canv").getContext("2d");
+  let keysPressed = {};
+  socket.emit("person", {
+    name: prompt("Enter your name: "),
+    basicConfig: {
+      x: 0,
+      y: 0,
+      bulletsFired: []
+    }
+  });
+
+  window.onkeydown 
+</script>
